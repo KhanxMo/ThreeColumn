@@ -1,0 +1,151 @@
+
+/*  SETUP   */
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    --BrightOrange: hsl(31, 77%, 52%);
+    --DarkCyan: hsl(184, 100%, 22%);
+    --VeryDarkCyan: hsl(179, 100%, 13%);
+    --VeryLightGrey: hsl(0, 0%, 95%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*  GENERAL CLEANUP   */
+
+body{
+    background: #F2F2F2;
+    //font-family: 'Big Shoulders Display', cursive;
+    font-family: 'Lexend Deca', sans-serif;
+
+    margin: 0;
+
+}
+
+/*  ACTUAL CSS  */
+
+section{
+    padding: 3em;
+}
+
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: var(--VeryLightGrey);
+    margin: 1em 0;
+    font-size: 2rem;
+    
+}
+
+p{
+    margin: 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.94rem;
+    line-height: 2;
+    margin-bottom: 2em;
+}
+
+h3{
+    margin: 0;
+    background: var(--VeryLightGrey);
+    display: inline;
+    padding: 1em 2em;
+    border-radius: 5em;
+    font-size: 0.8rem;
+
+}
+
+
+div{
+    margin: 0;
+    padding: 3em;
+
+}
+
+
+.column1{
+    background: var(--BrightOrange);
+    h3{
+        color: var(--BrightOrange);
+    }
+    border-top-left-radius: 0.8em;
+    border-top-right-radius: 0.8em;
+    
+    h3:hover{
+        background: var(--BrightOrange);
+        color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+    }
+}
+
+.column2{
+    background: var(--DarkCyan);
+    h3{
+        color: var(--DarkCyan);
+    }
+
+    h3:hover{
+        background: var(--DarkCyan);
+        color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+    }
+
+}
+
+
+.column3{
+    background: var(--VeryDarkCyan);
+    h3{
+        color: var(--VeryDarkCyan);
+    }
+    border-bottom-left-radius: 0.8em;
+    border-bottom-right-radius: 0.8em;
+
+    h3:hover{
+        background: var(--VeryDarkCyan);
+        color: white;
+        border-width: 2px;
+        border-style: solid;
+        border-color: white;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 770px){
+
+    section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    p{
+        margin-bottom: 4em;
+        min-height: 20vh;
+    }
+
+    div{
+        padding: 45px;;
+    }
+
+    .column1{
+        border-radius: 1em 0 0 1em;
+    }
+    .column3{
+        border-radius: 0 1em 1em 0;
+    }
+
+}
